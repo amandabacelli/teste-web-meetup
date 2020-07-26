@@ -7,6 +7,7 @@ Projeto desenvolvido para realização do #33 Meetup Reprograma
 * Consiste em realizar um teste web automtizado para efetivação de Login e criação de novo Customer 
 
 ### Tecnologias
+* Java 11
 * [SeleniumWebDriver](https://www.selenium.dev/documentation/en/webdriver/)
 * [Cucumber](https://cucumber.io/)
 * [ChromeDriver](https://chromedriver.chromium.org/downloads)
