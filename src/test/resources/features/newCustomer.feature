@@ -7,11 +7,12 @@ Funcionalidade: Customer
     Quando faço login com o username "admin" e password "admin"
 
   @SuccessfullRegisterCustomer
+  @SuccessfullRegisterCustomer
   Cenário: Adicionar um novo customer
     Dado que eu esteja na tela inicial
     Quando acesso o menu Customers
-    E adiciono um novo customer com o email "aultima3@email.com.br"
-    Então o email "aultima3@email.com.br" é cadastrado com sucesso
+    E adiciono um novo customer com o email "aultima5@email.com.br"
+    Então o email "aultima5@email.com.br" é cadastrado com sucesso
 
   @testeacesso
   Cenário: Adicionar um novo customer

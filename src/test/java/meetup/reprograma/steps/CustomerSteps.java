@@ -30,7 +30,7 @@ public class CustomerSteps {
 
     @Então("o email {string} é cadastrado com sucesso")
     public void o_email_é_cadastrado_com_sucesso(String email) {
-        Assert.assertFalse("Customer cadastrado", customerPage.valid_customer(email));
+        Assert.assertTrue("Customer não cadastrado", customerPage.valid_customer(email));
     }
 
     @Quando("acesso o cadastro do email")
@@ -40,7 +40,7 @@ public class CustomerSteps {
 
     @Então("verifico se está cadastrado")
     public void verifico_se_está_cadastrado() {
-        Assert.assertFalse("Customer não cadastrado", customerPage.valid_customer("teste@teste.com.br"));
+        Assert.assertTrue("Customer não cadastrado", customerPage.valid_customer("teste@teste.com.br"));
     }
 
 

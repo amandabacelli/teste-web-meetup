@@ -32,8 +32,8 @@ public class CustomerPage {
     @FindBy(xpath = "//a[@class='back-button']")
     private WebElement btnBack;
 
-    @FindBy(xpath = "(//div/h3)[3]")
-    private WebElement msgEmail;
+    @FindBy(xpath = "(//a[@href='/admin/customer']/h3")
+    private WebElement msgCustomer;
 
     @FindBy(xpath = "//a[@href='/admin/customer/7117']")
     private WebElement clickEmail;
@@ -54,8 +54,8 @@ public class CustomerPage {
 
 
     public boolean valid_customer(String email) {
-        Helper.element_exist(msgEmail,10);
-        String getEmail = msgEmail.getText();
+        Helper.element_exist(msgCustomer,10);
+        String getEmail = Hooks.getDriver().findElement(By.xpath("//div/h3[contains(.,'"+email+"')]")).getText();
         return getEmail.equals(email);
     }
 
